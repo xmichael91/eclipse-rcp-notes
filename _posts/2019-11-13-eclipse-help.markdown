@@ -63,33 +63,3 @@ categories: eclipse
 Создайте новый проект плагина (RCP-приложение) `myapp.rcp`, используя шаблон "RCP 3.x application (minimal)". Добавьте в зависимости плагин документации `myapp.help`, созданный на предыдущем этапе. Добавьте расширение меню - пункт, привязанный к команде `org.eclipse.ui.help.displayHelp`.
 
 Теперь запустите приложение (на вкладке Overview пункт Launch an Eclipse application). Если все сделано правильно, появится пустое окно с единственным пунктом главного меню "Display Help", по нажатию на который будет открываться справочная система.
-
-
-
-{% highlight java %}
-public class Application implements IApplication
-{
-
-	@Override
-	public Object start(IApplicationContext a_context) throws Exception
-	{
-        // выполняем какую-либо работу или создаем GUI
-		return 0;
-	}
-
-	@Override
-	public void stop()
-	{
-        // завершаем работу или закрываем окно
-	}
-
-}
-{% endhighlight %}
-
-Интерфейс `IApplication` имеет два метода - `start()` и `stop()`, которые предна
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
