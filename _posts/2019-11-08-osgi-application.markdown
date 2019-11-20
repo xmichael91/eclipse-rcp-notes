@@ -62,7 +62,7 @@ public class Application implements IApplication
   {
     // выполняем какую-либо работу или создаем GUI
     
-    return 0; // возвращаем ноль, если работа завершена успешно
+    return IApplication.EXIT_OK; // возвращаем ноль, если работа завершена успешно
   }
 
   @Override
